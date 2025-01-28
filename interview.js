@@ -241,7 +241,7 @@ while(i < fruits.length){
 */
 
 // ------------------ array method in js-----------
-
+/*
 const fruits = ["apple", "banana", "orange"];
 
 // to add an element inside an array from the back
@@ -296,3 +296,65 @@ const evenNumber = number.filter((num)=>{
  const str = "hello";
  const chars = [...str];
  console.log(chars);
+
+ */
+
+ // some output based questions
+
+ /*
+ myfun()
+
+ var myfun= function (){
+    console.log("first");
+ }
+ myfun();
+ function myfun (){
+    console.log("second");
+ }
+ myfun();
+
+ // second frist first
+ */
+
+ /*
+ var variable =10;
+ (()=>{
+    console.log(variable);
+    variable = 20;
+    console.log(variable);
+ })();
+ console.log(variable);
+ var variable=30;
+
+ // 10 20 20
+ */
+
+ /*
+foo = 30;
+console.log("FOO",foo);
+var foo= 100;
+console.log("FOO", foo);
+
+// 30 100
+*/
+/*
+const piyush = {
+    name:"Piyush Garg",
+    sayName: function (){
+        console.log(this.name);
+    }
+}
+
+setTimeout(piyush.sayName.bind(piyush),3*1000);
+// here bind keyword helps to bind a value to a object reference, in general setTimeout forget its reference
+
+*/
+const obj ={
+    height: 30
+};
+console.log(obj.height);
+delete obj.height;
+console.log(obj.height);
+//it will give 30 undefined
+
+//  here if you use obj = Object.create({}) in this all the data memebers are created inside a prototype and delete keyword doesn't work on prototype
