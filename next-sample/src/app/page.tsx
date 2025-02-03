@@ -1,3 +1,4 @@
+import AudioPlayer from "@/components/AudioPlayer";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -17,6 +18,7 @@ export default function Home() {
         <Link href="/react">
           <button className="bg-blue-400"> React js Docs page</button>
         </Link>
+        <AudioPlayer />
 
         
       </div>
